@@ -10,18 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="style.css?<?php echo time(); ?>">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Form</title>
 </head>
 <body>
     <main class="main">
-        <p>SEND E-MAIL</p>
-        <form class="contact__form" action="contact.php" method="POST">
-            <input type="text" name="name" placeholder="Full name">
-            <input type="text" name="mail" placeholder="Mail">
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit" name="submit">SEND MAIL</button>
-        </form>
+        <section class="contact">
+            <div class="contact__form">
+                <h1>Get In Touch</h1>
+                <form  action="contact.php" method="POST">
+                    <div class="contact__inline">
+                        <input class="contact__input" type="text" name="fname" placeholder="First name">
+                        <input class="contact__input" type="text" name="lname" placeholder="Last name">
+                    </div>
+                    <div class="contact__inline">
+                        <input class="contact__input" type="text" name="mail" placeholder="Mail">
+                        <input class="contact__input" type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <textarea class="contact__input contact__textarea" name="message" placeholder="Message"></textarea>
+                    <button class="contact__button" type="submit" name="submit">SEND</button>
+                </form>
+            </div>
+        </section>
+        
     </main>
 </body>
 </html>

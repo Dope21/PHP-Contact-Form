@@ -9,11 +9,6 @@
         $mailFrom = $_POST['mail'];
         $message = $_POST['message'];
 
-        // echo $name."<br>";
-        // echo $subject."<br>";
-        // echo $mailFrom."<br>";
-        // echo $message."<br>";
-
         require_once "PHPMailer/PHPMailer.php";
         require_once "PHPMailer/SMTP.php";
         require_once "PHPMailer/Exception.php";
